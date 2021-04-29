@@ -15,6 +15,3 @@
     $bsCss = "$bsPath/bs-css.inc.php";
     $bsScript = "$bsPath/bs-script.inc.php";
     $navigation = "$navigationPath/nav.inc.php";
-
-
-?>
