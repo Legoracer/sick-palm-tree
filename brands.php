@@ -6,7 +6,7 @@ require "includes/configuration.inc.php";
 <html lang="en">
 
 <head>
-    <title>Customize</title>
+    <title>Brands</title>
     <?php require $metaHtml; ?>
     <?php require $bsCss; ?>
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +15,7 @@ require "includes/configuration.inc.php";
 <body>
     <?php require $navigation; ?>
 
-
+    <?php require $footer; ?>
     <?php require $bsScript; ?>
 </body>
 
