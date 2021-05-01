@@ -15,9 +15,9 @@ require "includes/configuration.inc.php";
     <?php require $navigation; ?>
 
     <div class="video-text">
-        <img class="logo-video" src="images/logo.png" width="100px" height="90px" alt="logo">
+        <img class="logo-video" src="./assets/images/icons/logo.png" width="100px" height="90px" alt="logo">
         <video id="vid" autoplay loop muted>
-            <source src="./images/video.mp4" type="video/mp4">
+            <source src="./assets/videos/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <p class="text-video text-light">Limited Addiction</p> <br>
@@ -28,7 +28,7 @@ require "includes/configuration.inc.php";
         document.getElementById('vid').play(); // woo hoo we love web design
     </script> 
 
-    <?php require "includes/footer.inc.php"; ?>
+    <?php require $footer; ?>
     <?php require $bsScript; ?>
 </body>
 
