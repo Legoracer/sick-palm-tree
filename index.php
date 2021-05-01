@@ -23,12 +23,13 @@ require "includes/configuration.inc.php";
         <p class="text-video text-light">Limited Addiction</p> <br>
         <p class="text-light text-video1">The obsession is real. Discover watches with limited production and endless demand.</p>
     </div>
-    <script>
-        document.getElementById('vid').play();
-    </script> <!-- woo hoo we love web design -->
 
-    <?php require $bsScript; ?>
+    <script>
+        document.getElementById('vid').play(); // woo hoo we love web design
+    </script> 
+
     <?php require "includes/footer.inc.php"; ?>
+    <?php require $bsScript; ?>
 </body>
 
 </html>
