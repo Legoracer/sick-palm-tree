@@ -6,9 +6,10 @@ require "includes/configuration.inc.php";
 <html lang="en">
 
 <head>
-    <title>Homepage</title>
+    <title>References</title>
     <?php require $metaHtml; ?>
     <?php require $bsCss; ?>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>

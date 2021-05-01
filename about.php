@@ -15,7 +15,7 @@ require "includes/configuration.inc.php";
 <body>
     <?php require $navigation; ?>
 
-
+    <?php require $footer; ?>
     <?php require $bsScript; ?>
 </body>
 
