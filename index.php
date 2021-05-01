@@ -43,7 +43,7 @@ require "includes/configuration.inc.php";
     
 
     <script>
-        document.getElementById('vid').play();
+        document.getElementById('vid').play();   
     </script> <!-- woo hoo we love web design -->
 
     <?php require $bsScript; ?>
