@@ -115,8 +115,8 @@ require "includes/configuration.inc.php";
 
 
     <script>
-        document.getElementById('vid').play();
-    </script>
+        document.getElementById('vid').play();   
+    </script> <!-- woo hoo we love web design -->
 
     <?php require $bsScript; ?>
     <?php require "includes/footer.inc.php"; ?>
