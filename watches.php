@@ -52,7 +52,6 @@
         $sql .= "AND material_id = $material ";
     }
 
-    //echo $sql; return;
     try {
     $stmt = $mysqli->prepare($sql);
     $stmt->bind_param('ii', $priceFrom, $priceTo);

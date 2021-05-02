@@ -43,9 +43,161 @@ img.logo-video{
 }
 
 
-
 .under-video{
+    width: 100vw;
+    height: 300px;
+}
+
+.under-video > p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.under-video-second{
+    width: 100vw;
+    height: 300px;
+    padding-top: -10px;
+}
+
+.under-video-second > p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.under-video-last {
+    width: 100vw;
+    height: 500px;
+}
+
+.color{
     background-color: #1d1b1c;
 }
+
+.color-second{
+    background-color: #ffc343;
+}
+
+
+.under-video-third{
+    width: 100vw;
+    height: 600px;
+    padding-top: -10px;
+}
+
+.under-video-third > p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.watchmaker{
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    top: 0;
+}
+
+.scanner{
+    width: 100%;
+    height: auto;
+}
+
+.scanner-sm{
+    filter: blur(3px);
+}
+
+
+.last-element{
+    position: relative;
+    text-align: center;
+}
+
+.last-element-md{
+    position: relative;
+    text-align: center;
+}
+
+.last-element-sm{
+    position: relative;
+    text-align: center;
+    height: 730px;
+    width: 100%;
+    background-color: #1d1b1c;
+}
+
+.centered-up {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 40px;
+}
+
+.centered {
+    position: absolute;
+    top: 27%;
+    left: 39%;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.centered-down {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+}
+.centered-down1 {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+}
+
+.centered-up-md {
+    position: absolute;
+    top: 11%;
+    left: 9%;
+    font-size: 25px;
+}
+
+.centered-md {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    font-size: 15px;
+}
+
+.centered-down-md {
+    position: absolute;
+    top: 82%;
+    left: 35%;
+}
+.centered-down1-md {
+    position: absolute;
+    top: 82%;
+    left: 55%;
+}
+
+.centered-up-sm {
+    position: absolute;
+    top: 5%;
+    left: 13%;
+}
+
+.centered-sm {
+    position: absolute;
+    top: 41%;
+    font-size: 20px;
+}
+
+.centered-down-sm {
+    position: absolute;
+    top: 90%;
+    left: 23%;
+}
+.centered-down1-sm {
+    position: absolute;
+    top: 90%;
+    left: 55%;
+}
+
 
 

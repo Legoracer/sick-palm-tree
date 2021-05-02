@@ -6,7 +6,7 @@ require "includes/configuration.inc.php";
 <html lang="en">
 
 <head>
-    <title>About us</title>
+    <title>Luxury Wristwear | About us</title>
     <?php require $metaHtml; ?>
     <?php require $bsCss; ?>
     <link rel="stylesheet" href="css/style.css">
