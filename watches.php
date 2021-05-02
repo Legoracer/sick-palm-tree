@@ -1,5 +1,7 @@
-<?php require "includes/configuration.inc.php"; ?>
-<?php require "includes/db-configuration.inc.php"; ?>
+<?php 
+  require "includes/configuration.inc.php";
+  require "includes/db-configuration.inc.php";
+?>
 
 <?php 
     // From internet
@@ -52,6 +54,7 @@
         $sql .= "AND material_id = $material ";
     }
 
+    //echo $sql; return;
     try {
     $stmt = $mysqli->prepare($sql);
     $stmt->bind_param('ii', $priceFrom, $priceTo);
@@ -79,8 +82,8 @@
 <body>
     <?php require $navigation; ?>
     <main class="container mx-auto my-5 row p-4">
-        <section class="col-12 col-lg-3 p-0">
-            <form class="card w-100 p-2 " action="" method="get">
+        <section class="col-12 col-lg-3 p-0 d-flex flex-column align-items-center my-2">
+            <form class="card w-100 p-2" action="" method="get">
                 <div class="form-group">
                     <label>Price Range</label>
                     <div class="d-flex align-items-center justify-content-center">
@@ -143,7 +146,7 @@
             </form>
         </section>
 
-        <section class="col-12 col-lg-9">
+        <section class="col-12 col-lg-9 p-0">
             <div class="d-flex flex-row flex-wrap justify-content-center">
             <?php
                     if($numOfWatches > 0) {
@@ -152,6 +155,7 @@
                         $id = $watch["id"];
                         $title = $watch["name"];
                         $brand_id = $watch["brand_id"];
+                        $material_id = $watch["material_id"];
                         $price = formatDollars($watch["price"]);
 
                         // Get image from DB
@@ -169,15 +173,24 @@
                         $result = $stmt->get_result();
                         $brand = $result->fetch_object();
 
+                        // Get material from DB
+                        $sql = "SELECT * FROM material WHERE id = ?";
+                        $stmt = $mysqli->prepare($sql);
+                        $stmt->bind_param('i', $material_id);
+                        $stmt->execute();
+                        $result = $stmt->get_result();
+                        $material = $result->fetch_object();
+
                         echo "
-                            <a href='./watch.php?id=$id' class='item card p-2 d-flex flex-column justify-content-between m-1'>
-                                <div class='w-100 d-flex justify-content-center'>
-                                    <img class='img-fluid w-75 h-100' src='$img->src' alt='$img->alt'>
+                            <a href='./watch.php?id=$id' class='item card p-2 d-flex flex-column justify-content-between mx-1 my-2 w-100'>
+                                <div class='watch w-100 d-flex justify-content-center overflow-hidden position-relative'>
+                                    <img class='watch-img' src='$img->src' alt='$img->alt'>
+                                    <p class='material bg-light'>$material->name</p>
                                 </div>
                                 <div class='mt-4'>
-                                    <h4 class='brand'>$brand->name</h4>
-                                    <h1 class='name text-center'>$title</h1>
-                                    <h3 class='price m-0'>$price</h3>
+                                    <h4 class='brand text-center'>$brand->name</h4>
+                                    <h3 class='price text-center'>$price</h3>
+                                    <h1 class='name m-0 text-center'>$title</h1>
                                 </div>
                             </a>
                         ";
@@ -187,8 +200,9 @@
                     $mysqli->close();
                 ?>
             </div>
-        </section>  
-    </main>
+        </section>
+
+        </main>
     <?php require $footer; ?>
     <?php require $bsScript; ?>
 </body>

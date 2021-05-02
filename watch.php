@@ -1,6 +1,7 @@
-<?php require "includes/configuration.inc.php"; ?>
-<?php require "includes/db-configuration.inc.php"; ?>
-
+<?php 
+  require "includes/configuration.inc.php";
+  require "includes/db-configuration.inc.php";
+?>
 
 <?php
     /** Parse ID from URL and Query the DB */
@@ -93,9 +94,10 @@
 <body>
     <?php require $navigation; ?>
     <main class="container my-5">
+        <a href="./watches.php">Back To Products</a>
         <section class="row">
             <div class="col-12 col-md-6">
-                <div id="watch-carousel" class="carousel slide d-flex align-items-center justify-content-center" data-ride="carousel">
+                <div id="watch-carousel" class="carousel slide d-flex align-items-center justify-content-center overflow-hidden" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <?php
                             // Get images from DB
@@ -118,7 +120,7 @@
 
                                     $index += 1;
                                 }
-                                }
+                            }
                         ?>
                     </ol>
                     <div class="carousel-inner">
@@ -147,7 +149,7 @@
 
                                     $index += 1;
                                 }
-                                }
+                            }
                         ?>
                     </div>
                     <a class="carousel-control-prev" href="#watch-carousel" role="button" data-slide="prev">
@@ -162,7 +164,7 @@
             </div>
             <div class="col-12 col-md-6 py-5 d-flex flex-column justify-content-between">
                 <div>
-                    <h4 class="brand"><?php echo $brand->name; ?></h4>
+                    <h4 class="brand"><a href="watches.php?brand=<?php echo $brand->id ?>"><?php echo $brand->name; ?></a></h4>
                     <h1 class="name"><?php echo $watch->name; ?></h1>
                     <p class="model">MODEL: <?php echo $watch->id; ?></p>
                 </div>
@@ -173,8 +175,9 @@
                 <div class="mb-3 mb-md-0">
                     <h3 class="price"><?php echo formatDollars($watch->price); ?></h3>
                 </div>
+
                 <div>
-                    <h6 class="info">MATERIAL: <em><?php echo $material->name; ?></em></h6>
+                    <h6 class="info">MATERIAL: <em><a href="watches.php?material=<?php echo $material->id ?>"><?php echo $material->name; ?></a></em></h6>
                 </div>
                 <div class="d-flex justify-content-end">
                     <button class="btn btn-primary">Order Now</button>

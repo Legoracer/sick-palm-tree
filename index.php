@@ -21,21 +21,21 @@ require "includes/configuration.inc.php";
     <?php require $navigation; ?>
 
     <div class="d-none d-lg-block">
-        <video id="vid" autoplay loop muted>
+        <video id="vid" class="w-100" autoplay loop muted>
             <source src="video/rolex-final-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
     <div class="d-none d-md-block d-lg-none">
-        <video id="vid1 mx-auto" autoplay loop muted>
+        <video id="vid1" class="w-100 mx-auto" autoplay loop muted>
             <source src="video/medium-final.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
     <div class="d-md-none">
-        <video id="vid2" autoplay loop muted>
+        <video id="vid2" class="w-100" autoplay loop muted>
             <source src="video/small-final.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>

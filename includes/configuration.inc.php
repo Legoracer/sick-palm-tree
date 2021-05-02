@@ -17,3 +17,4 @@
     $bsScript = "$bsPath/bs-script.inc.php";
     $navigation = "$navigationPath/nav.inc.php";
     $footer = "$footerPath/footer.inc.php";
+?>
