@@ -9,6 +9,7 @@ require "includes/configuration.inc.php";
     <title>Rubrics</title>
     <?php require $metaHtml; ?>
     <?php require $bsCss; ?>
+    <?php require $bsScript; ?>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
