@@ -44,15 +44,15 @@ require "includes/configuration.inc.php";
     <div class="color">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 under-video d-flex align-items-center justify-content-center ">
+                <div class="col-sm under-video d-flex align-items-center justify-content-center ">
                     <img src="images/service-logo.png" width="250px" height="250px" alt="logo service">
                 </div>
-                <div class="col-sm-4 under-video d-flex align-items-center justify-content-center">
+                <div class="col-sm under-video d-flex align-items-center justify-content-center">
                     <p class="text-light text-center text-lg-left"> <br>Luxury Wristwear is home to the greatest
                         collection of pre-owned
                         luxury watches, all certified as authentic and Collector Quality.</p>
                 </div>
-                <div class="col-sm-4 under-video d-flex align-items-center justify-content-center ">
+                <div class="col-sm under-video d-flex align-items-center justify-content-center ">
                     <p class="text-light text-center text-lg-left">Browse between the most honorable watch brands on the
                         market.</p>
                 </div>
@@ -63,14 +63,14 @@ require "includes/configuration.inc.php";
     <div class="color-second">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 under-video-second d-flex align-items-center justify-content-center">
+                <div class="col-sm under-video-second d-flex align-items-center justify-content-center">
                     <h1 class="text-dark text-center font-weight-bold text-lg-left">Tired of your watch?</h1>
                 </div>
-                <div class="col-sm-4 under-video-second d-flex align-items-center justify-content-center">
+                <div class="col-sm under-video-second d-flex align-items-center justify-content-center">
                     <p class="text-dark text-center text-lg-left">Make room for your new watch. Luxury Wristwear has a
                         number of avaliable watches for you to choose from.</p>
                 </div>
-                <div class="col-sm-4 under-video-second d-flex align-items-center justify-content-center">
+                <div class="col-sm under-video-second d-flex align-items-center justify-content-center">
                     <a href="watch.php" class="btn btn-outline-dark btn-lg" role="button" aria-pressed="true">Cast an
                         Eye</a>
                 </div>
